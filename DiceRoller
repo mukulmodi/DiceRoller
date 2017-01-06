@@ -1,0 +1,13 @@
+import random
+
+maxRoll = 6
+minRoll = 1
+
+roll_again = "yes"
+numDice = int(input("How many dice to roll at once?"))
+while roll_again == "yes" or roll_again == "y":
+    print("Rolling the dice")
+    for x in range(0,numDice):
+        print(random.randint(minRoll, maxRoll))
+    roll_again=input("Roll the dice again?")
+
