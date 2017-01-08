@@ -11,3 +11,15 @@ while roll_again == "yes" or roll_again == "y":
         print(random.randint(minRoll, maxRoll))
     roll_again=input("Roll the dice again?")
 
+coinFlip = input("Do you want to flip a coin?")
+heads = 0
+tails = 1
+y = 0
+while coinFlip == "yes" or coinFlip == "y":
+    y = random.randint(heads,tails)
+    if y == 1:
+        print("Tails")
+    else:
+        print("Heads")
+    coinFlip = input("Do you want to flip another coin?")
+
